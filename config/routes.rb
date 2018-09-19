@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/salut', to: 'static_pages#contact'
+  #get 'static_pages/salut'
    root 'static_pages#home'
   get 'static_pages/home'
   get 'static_pages/help'
