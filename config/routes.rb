@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  get '/salut', to: 'static_pages#contact'
+  get '/adeniyi', to: 'static_pages#contact', as: 'salut'
   #get 'static_pages/salut'
-   root 'static_pages#home'
+  root to: 'static_pages#home'
+  #root 'static_pages#home'
   get 'static_pages/home'
   get 'static_pages/help'
   resources :microposts
